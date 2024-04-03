@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en"> <!--Specifies the primary language which is English of the HTML-->
+<head>
+    <meta charset="UTF-8"> <!--This supports a wide range of characters which includes from other languages-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--This sets the viewport to the width of the device's screen which will be the width of the webpage.-->
+    
+    <title> Frozen </title>
+    <link rel="stylesheet" href="styles.css"> <!-- External CSS file -->
+
+    <!-- I added some new fonts from Google fonts and copied the link here to be able to access it in css-->
+    <link href="https://fonts.cdnfonts.com/css/ice-kingdom" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;
+    0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@800&display=swap" rel="stylesheet">
+
+</head>
+
+<body> 
+        <script src="https://unpkg.com/magic-snowflakes/dist/snowflakes.min.js"></script> <!--This is the link for the falling snowflake-->
+        <!--This is the javascript for the falling snowflake, where i can adjust the values-->
+        <script>
+            var sf = new Snowflakes({
+                color: "#9eefff",
+                count: 100,
+                minOpacity: 0.1,
+                maxOpacity: 0.6,
+                maxSize: 50
+            });
+        </script>
+
+    <div class="headercontainer"> <!--div class for the header where it shows the navigations and buttons-->
+        <header> 
+            <h1>Frozen</h1>
+            <nav>
+                <ul>
+                    <li><a href="#plot">Plot</a></li>
+                    <li><a href="#characters">Characters</a></li>
+                    <li><a href="#cast">Cast</a></li>
+                    <li><a href="#keyinformation">Key Information</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                </ul>
+            </nav>
+            <!-- Link styled as a button -->
+            <a href="https://frozen.disney.com/" target="_blank" class="button">Visit Official Website</a> 
+            <a href="https://youtu.be/TbQm5doF_Uc?si=Xwp5RYSljXiPc9Le" target="_blank" class="button">Official Trailer</a>
+        </header>
+    </div>
+    <main>
+            <section id="plot"> <!--This define the group related to plot and for the nav button to go here once its been pressed.-->
+                <div class="p1"> <!--Div is used to group the elements together for styling purposes.-->
+                <h2>Plot</h2>
+                <div class="plott">
+                <p> The movie Frozen is about the two princesses, Elsa and Anna, from the kingdom of Arendelle. Elsa who is the eldest daughter
+                    was born with magical powers that can create ice and snow, meanwhile Anna is born without any magical power. While they were
+                    building a snowman and playing with the snow created by Elsa, she accidentally hits Anna in her head with her magic powers. their
+                    parents quickly came as Elsa called out for help, they took her to the tribe of trolls to repair the damage. Grand Pabbie, the troll
+                    leader, ask whether Elsa is born or cursed with her abilities. King Agnarr confirms that she was born with it and Grand Pabbie then
+                    explains that Anna was fortunate to be hit in the head than the heart, since it would have been fatal. He advises the family to avoid
+                    Elsa using her powers around Anna and then he alters Anna's memories to ensure she doesn't know about her sister's powers, only remembering
+                    the fun they had together.
+                </p>
+                <p> Grand Pabbie warns Elsa about the dangers of her growing powers, is she cannot control them her fear will be her greatest enemy. Then the king
+                    ordered to close the gates of the castle, reduced the staffs, and Elsa is ostracized from everyone, even her sister Anna, to protect her from
+                    the world until she learns to control her powers. This leaves both sisters feel distraught and lonely. Years went by, the sister lose their parents
+                    in a shipwreck, and Elsa must take the throne as the eldest daughter. Elsa finally come out from her isolation with anxiety from her powers and
+                    orders the castle gates to be open for her coronation. Meanwhile Anna falls in love with a visiting princes, Hans, who later then asks her to marry
+                    him. Elsa refuses, and the two sisters argue which caused Elsa to reveal her powers and turning the kingdom of Arendelle into a permanently Frozen
+                    wilderness. From her fear of harming anyone from her powers, she runs away to the mountains and used her powers to create an ice palace. Anna decides
+                    to track down her sister and convince her to reverse the spell. She then teams up with Kristoff, his reindeer Sven, and a magic snowman named Olaf to
+                    face every challenges they encountered to reach Elsa. In the end, Anna and Elsa discover that true love is the solution to their problems.
+                </p>
+            </div>
+            </div>
+            </section>
+
+            <section id="characters"> <!--This define the group related to characters and for the nav button to go here once its been pressed.-->
+                <div class="c1">
+                <h2>Characters</h2>
+                <div class="char">
+                    <ul class="list1"> <!--Unordered list of chatacters-->
+                        <li>Elsa</li>
+                        <li>Anna</li>
+                        <li>Kristoff</li>
+                        <li>Sven</li>
+                        <li>Olaf</li>
+                        <li>Hans</li>
+                        <li>Grand Pabbie</li>
+                        <li>Duke of Weselton</li>
+                        <li>Oaken</li>
+                        <li>Bulda</li>
+                        <li>Marshmallow</li>
+                    </ul>    
+
+                    <ul class="list2">
+                        <li>King Agnarr</li>
+                        <li>Queen Iduna</li>
+                        <li>Gothi</li>
+                        <li>Kai</li>
+                        <li>Gerda</li>
+                        <li>Baby Troll</li>
+                        <li>Bishop of Arendelle</li>
+                        <li>Spanish Dignitary</li>
+                        <li>Irish Dignitary</li>
+                        <li>German Dignitary</li>
+                        <li>Cliff</li>
+                    </ul>
+                </div>
+                </div>
+            </section>
+
+        <section id="cast"> <!--This define the group related to cast and for the nav button to go here once its been pressed.-->
+            <div class="c2">
+            <h2>Cast</h2>
+            <div class="casts">
+                <table class="table1"> <!--This is a table for the cast with a class element to style it seperately from the other table-->
+                    <tr> <!--This is thr row of cells in the table-->
+                        <th>Idina Menzel as</th> <!--This is the header of the cell in the table-->
+                        <td>Elsa</td> <!--This is the data cell in the table-->
+                    </tr>
+                    <tr>
+                        <th>Kristen Bell as</th>
+                        <td>Anna</td>
+                    </tr>
+                    <tr> 
+                        <th>Jonathan Groff as</th>
+                        <td>Kristoff</td>
+                    </tr>
+                    <tr>
+                        <th>Frank Welker as</th>
+                        <td>Sven</td>
+                    </tr>
+                    <tr>
+                        <th>Josh Gad as</th>
+                        <td>Olaf</td>
+                    </tr>
+                    <tr>
+                        <th>Santino Fontana as</th>
+                        <td>Hans</td>
+                    </tr>
+                    <tr>
+                        <th>Ciarán Hinds as</th>
+                        <td>Grand Pabbie</td>
+                    </tr>
+                    <tr>
+                        <th>Alan Tudyk as</th>
+                        <td>Duke of Weselton</td>
+                    </tr>
+                    <tr>
+                        <th>Chris Williams as</th>
+                        <td>Oaken</td>
+                    </tr>
+                    <tr>
+                        <th>Maia Wilson as</th>
+                        <td>Bulda</td>
+                    </tr>
+                    <tr>
+                        <th>Paul Briggs as</th>
+                        <td>Marshmallow</td>
+                    </tr>
+                </table>
+
+                <table class="table2">
+                    <tr> 
+                        <th>Maurice LaMarche as</th>
+                        <td>King Agnarr</td>
+                    </tr>
+                    <tr>
+                        <th>Jennifer Lee as</th>
+                        <td>Queen Iduna</td>
+                    </tr>
+                    <tr>
+                        <th>Jack Whitehall as</th>
+                        <td>Gothi</td>
+                    </tr>
+                    <tr>
+                        <th>Stephen J. Anderson as</th>
+                        <td>Kai</td>
+                    </tr>
+                    <tr>
+                        <th>Edie McClurg as</th>
+                        <td>Gerda</td>
+                    </tr>
+                    <tr> 
+                        <th>Annie Lopez as</th>
+                        <td>Baby Troll</td>
+                    </tr>
+                    <tr>
+                        <th>Robert Pine as</th>
+                        <td>Bishop of Arendelle</td>
+                    </tr>
+                    <tr>
+                        <th>Jesse Corti as</th>
+                        <td>Spanish Dignitary</td>
+                    </tr>
+                    <tr>
+                        <th>Jeffrey Marcus as</th>
+                        <td>Irish Dignitary</td>
+                    </tr>
+                    <tr>
+                        <th>Tucker Gilmore as</th>
+                        <td>German Dignitary</td>
+                    </tr>
+                    <tr>
+                        <th>Lewis Cleale as</th>
+                        <td>Cliff</td>
+                    </tr>
+                </table>
+            </div>
+            </div>
+        </section>
+
+        <section id="keyinformation"> <!--This define the group related to key information and for the nav button to go here once its been pressed.-->
+            <div class="k1">
+            <h2>Key Information</h2>
+            <div class="keyinfo">
+                <ul class="list1k"> <!--Unordered list of key information with class to be able to style it seperately in the css-->
+                    <p>DIRECTED BY</p>
+                        <li>Chris Buck</li>
+                        <li>Jennifer Lee</li>
+                    
+                    <p>PRODUCED BY</p>
+                        <li>Peter Del Vacho</li>
+                        <li>John Lasseter</li>
+
+                    <p>WRITTEN BY</p>
+                        <li>Christ Buck</li>
+                        <li>Jennifer Lee</li>
+                        <li>Shane Morris</li>
+        
+                    <p>STARRING</p>
+                        <li>Kristen Bell</li>
+                        <li>Idina Menzel</li>
+                        <li>Johnathan Groff</li>
+                        <li>Josh Gad</li>
+                        <li>Santino Fontana</li>
+                        <li>Alan Tudyk</li>
+                        <li>Ciarán Hinds</li>
+                        <li>Chris William</li>
+                        <li>Maurice LaMarche</li>
+                        <li>Jennifer Lee</li>
+
+                        <p>MUSIC BY</p>
+                        <li>Christophe Beck</li>
+                        <li>Kristen Anderson-Lopez</li>
+                        <li>Robert Lopez</li>
+
+                    <p>CINEMATOGRAPHY BY</p>
+                        <li>Scott Beattie</li>
+                        <li>Mohit Kallianpur</li>
+
+                    <p>EDITOR</p>
+                        <li>Jeff Draheim</li>
+                </ul>
+
+                <ul class="list2k">
+
+                    <p>STUDIOS</p>
+                        <li>Walt Disney Pictures</li>
+                        <li>Walt Disney Animation Studios</li>
+
+                    <p>DISTRIBUTOR</p>
+                        <li>Walt Disney Studios Motion Pictures</li>
+
+                    <p>RELEASED</p>
+                        <li>November 19,2023 (El Capitan Theatre)</li>
+                        <li>November 27,2013 (USA) </li>
+
+                    <p>GENRE</p>
+                        <li>Kids & Family</li>
+                        <li>Musical</li>
+                        <li>Comedy</li>
+                        <li>Adventure</li>
+                        <li>Fantasy</li>
+                        <li>Animation</li>
+
+                    <p>RUNNING TIME</p>
+                        <li>102 minutes</li>
+
+                    <p>LANGUAGE</p>
+                        <li>English</li>
+
+                    <p>BUDGET</p>
+                        <li>$150 million</li>
+
+                    <p>BOX OFFICE</p>
+                        <li>$1.280 billion</li>
+
+                    <p>FOLLOWED BY</p>
+                        <li>Frozen 2</li>
+                </ul>
+
+            </div>
+            </div>
+        </section>
+        
+        <section id="reviews"> <!--This define the group related to reviews and for the nav button to go here once its been pressed.-->
+            <div class="r1">
+            <h2>Reviews</h2>
+            <div class="rev">
+            <h4>TIMES OF INDIA</h4>
+            <p>"It's an incredible journey of a brave girl, who sets out to find her sister - the reluctant ice-queen with the help of an adorable snowman
+                and an unconventional 'prince charming'. It is nowhere the 'clichéd' fairy-tale, with an archaic view on women. The film introduces the new 
+                age Disney princesses, who no longer wait to be rescued. They are brave, uninhibited yet vulnerable and sacrificing. While snow looms over 
+                the kingdom, it's the goodness of people that keeps the fire burning. Also, Frozen redefines Disney's quintessential 'true love' theory. Even 
+                if you are not into fairy-tales, you'll love this one for it's unpredictable and thus keeps you engaged throughout. It's not about seeking 
+                happiness with someone else, but being happy with who you truly are." </p>
+
+            <br>
+
+            <h4>ROTTEN TOMATOES</h4>
+            <p>"Beautifully animated, smartly written, and stocked with singalong songs, Frozen adds another worthy entry to the Disney canon."</p>
+
+            <br>
+
+            <h4>THE IRISH TIMES</h4>
+            <p>"The makers of Frozen have set themselves a serious challenge. This is one of the very few Disney animations that does not employ a full-on 
+                demonic villain. In a tricky twist, Princess Elsa takes on some of those duties herself. It is, after all, she who brings chilly calamity to the 
+                beautifully rendered Nordic city. But that complexity adds a new dimension to a genre that more usually thrives on familiarity and convention."</p>
+
+            <br>
+            <h4>SCREENRANT</h4>
+            <p>"Frozen is another fine addition to the Disney animated feature pantheon, offering a witty and heartfelt princess fairly tale with creative musical 
+                elements and some visual panache. The only significant problem with the story is that there are plot/character elements that feel too much like 
+                conscious attempts to "correct" the classic Disney princess fairy tale tropes; in particular, those which are now outdated." </p>
+            </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Juliene Felise, Frozen</p> <!--The footer that can be found at the end of the website where the copyright is placed.-->
+    </footer>
+</body>
+</html>

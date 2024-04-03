@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8"> <!--This supports a wide range of characters which includes from other languages-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--This sets the viewport to the width of the device's screen which will be the width of the webpage.-->
+
+<!-- I added a new font from Google fonts and copied the link here to be able to access it in the css/style-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+
+<title>Claude Monet: Famous Paintings</title>
+
+<style>
+    body { /*This is the CSS code for the body*/
+        font-family: Arial, sans-serif;
+        background-image: url('morning-on-the-seine-near-giverny.jpg'); /*This is the background image of the website*/
+        background-size: cover; /* This covers the entire viewport */
+        background-position: center; /*This centers the background image*/
+        margin: 0;
+        padding: 0;
+        overflow: hidden; /*This hides the overflowing content and removes the scrollbar*/
+        position: relative;
+    }
+
+    .background-overlay { /*This is for the background to make sure the focus or attention will be on the photos*/
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh; /* Sets the height to 100vh, making the exact height as the viewport */
+        background-color: rgba(0, 0, 0, 0.4); /* Dimming overlay */
+    }
+
+    header { /*This is the CSS code for the header*/
+        background-color: #405973a8; /*Color with lowered opacity*/
+        font-family: "Cinzel", serif;
+        letter-spacing: 2px; 
+        font-size: 15px;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+        position: relative;
+        z-index: 1; /*Controls the layering of elements*/
+    }
+
+    .gallery { /*CSS for gallery which is the subject of the website, the photos and information*/
+        display: flex; /*turns the container into a flex container*/
+        flex-wrap: wrap; /*This makes the items form into a line*/
+        justify-content: space-around; /*This gives equal spacing between the items and the edges of the container*/
+        margin-top: 3cm;
+        position: relative;
+        z-index: 1;
+    }
+
+    .image { /*This is the CSS code for image*/
+        position: relative;
+        width: 400px;
+        height: 500px;
+        margin: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.5); /*Gives a shadow effect to the frames of the element*/
+        overflow: hidden;
+        border-radius: 20px; /*This is for the edges of the images*/
+        filter: drop-shadow(50px 50px 70px #081624); /*Similarly to the box-shadow but it instead adds a shadow to the contents of the element
+        which will give depth and dimension to the images. */
+    }
+
+    .image:hover { /*CSS code to be able to hover at the images*/
+        cursor: pointer; /*Once the cursor hover to the images it will turn into a pointer*/
+    }
+
+    .image:hover .image-info { /*CSS code for image and image-info adjusting the opacity of the background of the information that
+        is overlaying to the image when hover to it. And the height of the border will adjust when hover to it*/
+        height: 250px;
+        width: 100%;
+        background:  rgba(0, 0, 0, 0.7);
+    }
+
+    .image:hover p { /*CSS code for paragraph when hover for it to show*/
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .image img { /*CSS code for the original images*/
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: filter 0.3s; /* Adds transition for smooth effect */
+    }
+
+    /* Specific filter effects for individual images */
+    #image1:hover img {
+        filter: sepia(80%) contrast(120%);
+        
+    }
+
+    #image2:hover img {
+        filter: hue-rotate(210deg) saturate(60%);
+    }
+
+    #image3:hover img {
+        filter: brightness(90%) contrast(135%);
+    }
+
+    .image-info { /*CSS code for image-info this is set before hovering to the images.*/
+        position: absolute;
+        height: 80px;
+        width: 100%;
+        left:0;
+        background-color: rgba(0, 0, 0, 0.7);
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+        box-sizing: border-box; /*Includes padding and border in the element's total width and height */
+        bottom: 0px;
+        font-size: 15px;
+    }
+
+    span { /*To style the highlighted titles and making them bold*/
+        font-weight: bold;
+    }
+
+    h3 { /*CSS for h3*/
+        margin: 10px;
+        font-size: 20px;
+    }
+
+    p { /*CSS for p, this hides the paragraph before hovering to the image*/
+        margin: 20px;
+        visibility:hidden;
+        opacity: 0;
+    }
+</style>
+</head>
+<body>
+
+<div class="background-overlay"></div> <!--This is for the background image to be able to adjust it in the CSS-->
+
+<header>
+    <h1>Claude Monet: Famous Paintings</h1>
+</header>
+
+<div class="gallery"> <!--Div class to make it organize to style-->
+    <div id="image1" class="image"> <!--Div id so that it can be adjust in the style seperately from the others that all have the same class name-->
+        <img src="woman-with-a-parasol.jpg" alt="Woman with a Parasol - Madame Monet and Her Son, 1875 by Claude Monet"> <!--This is the image with alt name-->
+        <div class="image-info"> <!--First image-info-->
+            <h3>Woman with a parasol - Madame Monet and her son</h3>
+            <p> The <span>Woman with a parasol</span> was painted to convey the feeling of a casual family outing. The pose and the placement suggests
+                that his wife and son's stroll were interrupted by Monet to capture their likenesses. </p>
+            
+             <p>&copy; Claude Monet</p></div> <!--Copyright license -->
+    </div>
+    <div id="image2" class="image"> <!--Second div id with the same class name-->
+        <img src="sunflowers.jpg" alt="Sunflowers, 1881 by Claude Monet"> <!--This is the image-->
+        <div class="image-info"> <!--Second image-info-->
+            <h3>Sunflowers</h3>
+            <p>The <span>Sunflowers</span> was exhibited at the seventh Impressionist exhibition. The sunflowers for still life were
+                taken from Monet's garden in Vetheuil, and the painting was admired by critics and Vincent
+                Van Gogh. Monet was focused more on the composition as a whole sunflowers and painted them
+                with no sign of decay. </p>
+
+            <p>&copy; Claude Monet </p></div> <!--Another copyright license-->
+    </div>
+    <div id="image3" class="image"> <!--Third div id with the same class name-->
+        <img src="women-in-the-garden.jpg" alt="Women in the Garden by Claude Monet"> <!--This is the image for image3-->
+        <div class="image-info"> <!--Third image-info-->
+            <h3>Women in the garden</h3>
+            <p>The <span>Women in the Garden</span> had presented immense challenges for Monet, but he overcame them and creating This
+                stunning masterpiece that became a huge achievement as an early plein air work for Monet. The aim of this work
+                was to discover how figures within a landscape could give the impression that air and light moved around them. </p>
+            
+            <p>&copy; Claude Monet</p></div> <!--Copyright license-->
+    </div>
+</div>
+
+</body>
+</html>
+

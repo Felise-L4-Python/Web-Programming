@@ -1,0 +1,199 @@
+*{
+    body { /*CSS codes for body*/
+        font-family: "Cormorant Garamond", serif;
+        font-weight: 500;
+        font-style: normal;
+        margin: 0;
+        padding: 0;
+        background-color: #0a183e;
+        position:relative;
+    }
+    
+    header { /*CSS codes for header with an imported font*/
+
+        color: #05d6ff;
+        padding: 200px 0;
+        text-align: center;
+        font-family: 'Ice kingdom', sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        line-height: 0.4;
+    }
+    
+    @import url('https://fonts.cdnfonts.com/css/ice-kingdom'); /*Imported font for header "FROZEN"*/
+
+    nav ul { /*CSS codes for nav under the unordered list*/
+        list-style-type: none;
+        padding: 0;
+        font-size: 25px;
+        
+    }
+    
+    nav ul li { /*CSS codes for nav under the list items*/
+        display:inline;
+        margin-right: 20px;
+    }
+    
+    nav ul li a { /*CSS codes for nav under the hyperlink or anchor links that allows to navigate to the specified destination*/
+        color: #d1f7ff;
+        text-decoration: none;
+    }
+    
+    main { /*CSS codes for main*/
+        width: 70%;
+        margin: 40px auto;
+    }
+    
+    section { /*CSS codes for section*/
+        margin-bottom: 5cm;
+        font-size: 25px;
+        color:aliceblue ;
+
+    }
+    
+    h1 { /*CSS codes for h1*/
+        font-size: 200px; 
+        text-shadow: 1px 2px #e2faff; 
+        letter-spacing: 2mm;
+    }
+    h2 { /*CSS codes for all h2*/
+        color: #05d6ff;
+        text-align: center;
+        font-family: 'Ice kingdom', sans-serif;
+        font-size: 60px;
+        text-shadow: 1px 1px #e2faff;
+        letter-spacing: 5mm;
+    }
+
+    footer { /*CSS codes for footer*/
+        position: bottom;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        padding: 20px 0;
+        background-color: #08122f;
+        color: #e2faff;
+    }
+    
+    .headercontainer { /*CSS code for headercontainer*/
+        margin-bottom: 5cm;
+    }
+    .button { /*CSS code for the buttons*/
+        display: inline-block;
+        padding: 15px 20px;
+        background-color: #49a5dac7;
+        color: #d1f7ff;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 25px;
+    }
+    
+    .button:hover { /*CSS code for the buttons when hovering*/
+        background-color: #576bdb54;
+    }
+    
+    .p1 { /*CSS code for p1 placeament*/
+        margin: auto;
+        padding: 20px;
+    }
+    .plott { /*CSS code for plott*/
+        text-align: justify;
+        margin-top: 3cm;
+    }
+
+    .c1 { /*CSS code for c1 placement*/
+        margin-top: auto;
+        margin-bottom: 15cm;
+        padding: 30px;
+    }
+    .char { /*CSS code for char*/
+    margin-top: 3cm;
+    margin-left: 2cm;
+    margin-right: 4cm;
+    text-align: center;
+    }
+
+    .list1, .list2 { /*CSS codes for both list having the same adjustment*/
+        list-style: none;
+        line-height: 1.7;
+    }
+
+    .list1 { /*CSS code for list1 to be place at the left side*/
+        float: left;
+
+    }
+
+    .list2 { /*CSS code for list3 to be place at the right side*/
+        float: right;
+        
+    }
+    .c2 { /*CSS codes for c2 placement*/
+        margin-top: 17cm;
+        margin-bottom: 15cm;
+        padding: 30px;
+    }
+
+    .casts { /*CSS codes for casts. Adding a specific element to style the table that is under the casts without harming any other table thats
+        not under the same class name*/
+        margin-top: 3cm;
+        margin-left: 1cm;
+        margin-right: -1cm;
+        th {font-family: "Frank Ruhl Libre", serif;
+            font-weight: 900;
+            font-style: normal; color: #49a5dac7;}
+        }
+    }
+    
+    .table1, .table2 { /*CSS codes to adjust the table*/
+        float:left;
+        width: 50%;
+        text-align: left;
+    }
+    
+    .k1 { /*CSS codes for k1 placement */
+        margin-top: 8cm;
+        margin-bottom: 52cm;
+        padding: 30px;
+    }
+
+    .keyinfo { /*CSS codes for keyinfo. Adding a specific element to style without harming any other element outside the class name*/
+        margin-top: 2cm;
+        margin-left: 1cm;
+        margin-right: 1cm;
+        text-align: center;
+        p {font-family: "Frank Ruhl Libre", serif;
+            font-weight: 900;
+            font-style: normal; color: #49a5dac7; font-size: 30px;}
+    }
+
+    .list1k, .list2k { /*CSS codes for both list again to adjust the list*/
+        list-style: none;
+        line-height: 1.7;
+    }
+
+    .list1k { /*CSS code for list1k to be placed at the left side*/
+        float: left;
+    }
+
+    .list2k { /*CSS code for list2k to be placed at the right side*/
+        float: right;
+    }
+
+    .r1 { /*CSS codes for r1 placement*/
+        margin-top: auto;
+        margin-bottom: 6cm;
+        padding: 30px;
+    }
+
+    .rev { /*CSS codes for rev. Same thing with other css codes there's a specific element under the class name to avoid harming other
+        element styles outside the class name*/
+        margin-top: 3cm;
+        text-align: justify;
+        h4 {
+            font-family: "Frank Ruhl Libre", serif;
+            font-weight: 900;
+            font-style: normal; color: #49a5dac7; font-size: 30px;
+        }
+    }
+
+    
