@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!--This supports a wide range of characters which includes from other languages-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--This sets the viewport to the width of the device's screen which will be the width of the webpage.-->
+
+    <!-- I added a new font from Google fonts and copied the link here to be able to access it in the css/style-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <title>Xdinary Heroes</title>
+    <style>
+        body, html { /*This is the CSS code for the body & html to make the background image fits perfectly*/
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            overflow: hidden;
+            flex-direction: column; /* This makes the items stacked vertically */
+            justify-content: center; /*This makes the items placed in the center horizontally within the container.*/
+            background-image: url("bg.jpg");
+            background-size: cover; /* This makes the background image cover the entire background */
+            background-position: center; /* This centers the background image */
+        }
+        header { /*This is the CSS code for the header of the website, its just the adjustments for the header */
+            text-align: center;
+            padding: 5px;
+        }
+        .logo-container { /*This is the CSS code for the logo in which can be found in the header.*/
+            margin-right: 10px;
+        }
+        .logo { /*This is the CSS code for the image named logo, just to adjust the size of the logo.*/
+            width: 150px;
+            height: auto; 
+        }
+        .title { /*This is the title of the website which is located in the header. Another ajustments for the title*/
+            font-size: 26px; 
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+            color: #333;
+            letter-spacing: 4px;
+            margin-top: -1cm;
+        }
+
+        span { /*This is purely for styling, so that I could seperate the letter's adjustments from the others.*/
+            font-weight: 900;
+            font-family: "Poppins", sans-serif;
+        }
+        .videos-container { /*This is the CCS code for the adjustments for spacing and such.*/
+            margin-top: 0cm;
+            padding: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .video-container { /*This is the CSS code for the all the videos*/
+            margin: 20px;
+            transition: transform 0.2s ease; /* This adds transition effect when the cursor hits */
+        }
+        .video-container:hover { /*This makes the videos be able to hover*/
+            transform: scale(1.05);
+        }
+        video { /*Another adjustment for the videos.*/
+            display: block;
+            margin: auto;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #95bddd9a;
+            color: #ffffff;
+            padding: 20px 0;
+            margin-top: auto; /* Push footer to the bottom */
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-container"> <!-- This is the class for logo in the header-->
+            <img src="logo.png" alt="Logo" class="logo">
+        </div>
+        <div class="title"><span>X</span>DINARY <span>H</span>EROES</div> <!--This is the title where I seperate the letters of the beginning of the two words. So
+        that it would have different styles but it wont break any line or such.-->
+    </header>
+
+    <div class="videos-container"> <!--This is the class for the videos-->
+        <div class="video-container">
+            <video controls height="400px" width="400px" muted loop poster="againagain.jpg"> <!--The video is muted and loop, plus there's a poster of image like
+            a thumbmail before playing the video. -->
+                <source src="againagain.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="video-container">
+            <video controls height="400px" width="400px" muted loop poster="goodenough.jpg">
+                <source src="goodenough.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="video-container">
+            <video controls height="400px" width="400px" muted loop poster="littlethings.jpg">
+                <source src="littlethings.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+    <footer> <!--Copyright License-->
+        &copy;  JYP ENTERTAINMENT Co., Ltd. All rights reserved.
+    </footer>
+</body>
+</html>
