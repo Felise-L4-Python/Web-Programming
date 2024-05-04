@@ -1,0 +1,111 @@
+body, html { /*This is the css code for the adjusments and style of the body*/
+  font-family: Arial, sans-serif;
+  background-image: url("bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; /* This prevents the background image from repeating */
+  margin: 0; /* This removes the default margin */
+  padding: 0; /* This also removes the default padding */
+  overflow: hidden;
+}
+
+.container { /* THis is the css code for the adjustments of all the content (title & calculator)*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 800px;
+  margin: 50px; 
+  padding: 100px; 
+  min-height: 100vh; /* This ensures that the container covers entire viewport */
+}
+
+.title { /*This is the css code for the title of the website, its for adjusting the placement*/
+  flex: 1;
+  float: left;
+  padding: 10px;
+  margin-top: -15cm;
+}
+
+.title h1 { /*This is the css code for h1 title wherein I added the font that I took from Google fonts and then styled it.*/
+  margin: 0;
+  font-family: "Fjalla One", sans-serif;
+  font-size: 90px;
+  color: #ffffff;
+  letter-spacing: 1.5mm;
+}
+
+.description { /*This is the css code for description in aligning and the placement in the website as well as the style of the text.*/
+  flex: 1;
+  float: left;
+  text-align: justify;
+  color: #ffffff;
+  font-weight: 400;
+  padding: 10px;
+  margin-top: -7cm;
+  margin-left: -15cm;
+  margin-right: 5cm;
+  
+}
+
+.calculator { /*This is the css code for the calculator adjusting the box and the placement of the calculator in the website*/
+  max-width: 400px;
+  margin: 15px;
+  margin-top: -7cm;
+  margin-right: -9cm;
+  padding: 20px;
+  background-color: #304156cc;
+  border-radius: 8px;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.4);
+  float: right;
+}
+
+.cal { /*This is the css code for the label and input all together to adjust its placement*/
+  margin-bottom: 10px;
+  padding: 10px;
+  margin-left: 10px;
+  margin-right: 45px;
+}
+
+label { /*This is the css code for the label only to adjust its position and styled it.*/
+  display: block;
+  font-weight: bold;
+  margin-bottom: 6px;
+  color: #fff;
+}
+
+input[type="number"] { /*This is the css code for input to adjust its size and length*/
+  width: 110%;
+  padding: 10px;
+  margin-right: 40px;
+  border: 4px solid #304156f3;
+  border-radius: 5px;
+  transition: border-color 0.3s;
+}
+
+input[type="number"]:focus { /*This is the css code for the input when its focus by the user it will show the color*/
+  border-color: #dd4924;
+}
+
+button { /*This is the css code for the button for styling and adjusments*/
+  display: block;
+  width: 70%;
+  padding: 10px;
+  margin-left: 50px;
+  background-color: #4e708a;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer; /*When pointed at the button the cursor will change into pointer*/
+  transition: background-color 0.3s; /*The color will change once the button is being hovered at*/
+}
+
+button:hover { /*This is the color once hovered*/
+  background-color: #2c4c64;
+}
+
+p#totalCost { /*This is the css code for total cost its the adjustment and style*/
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 30px;
+  color: #fff;
+}

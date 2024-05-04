@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"> <!--This supports a wide range of characters which includes from other languages-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--This sets the viewport to the width of the device's screen which will be the width of the webpage.-->
+
+  <title>Petrol Calculator</title>
+  <link rel="stylesheet" href="styles.css"> <!--Link to css -->
+
+  <!-- Google font link to use for the title -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+
+  <script src="script.js"></script> <!-- This link to javascript -->
+</head>
+<body>
+    <div class="container"> <!--Containter for the content-->
+      <div class="title"> <!--Title of the content-->
+        <h1>PETROL</h1>
+        <h1>CALCULATOR</h1>
+    </div>
+
+    <div class="description"> <!--A short description about petrol calculator-->
+      <p>This petrol calculator estimates the total cost of petrol according to the cost per liter, the number of liters, and distance traveled in km. 
+         It helps the users to plan their fuel expenses for trips or periods of time.</p>
+    </div>
+
+    <div class="calculator"> <!--This class is for the petrol calculator -->
+    <form id="calcal">
+      <div class="cal">
+        <label for="costPerLiter">Cost per Liter (AED):</label> <!-- This is the label of the form control -->
+        <input type="number" id="costPerLiter" step="0.01" value="1.72" required> <!--This makes a number input which allows the user to enter
+        any cost per liter and gives the value that can be seen in the calculator before inputing-->
+      </div>
+      <div class="cal">
+        <label for="litersPurchased">Liters Purchased:</label> <!-- This is the label of the form control -->
+        <input type="number" id="litersPurchased" step="1" value="0" required> <!--This makes a number input which allows the user to enter
+          any amount of liters purchased and gives the value that can be seen in the calculator before inputing-->
+      </div>
+      <div class="cal">
+        <label for="distance">Distance per Travel (in km):</label> <!-- This is the label of the form control -->
+        <input type="number" id="distance" step="1" value="0" required> <!--This makes a number input which allows the user to enter
+          any amount of distantce per travel and gives the value that can be seen in the calculator before inputing-->
+      </div>      
+      <button type="button" id="calculateBtn">Calculate</button> <!--This is the button when press it will show the total cost-->
+    </form>
+    <p id="totalCost"></p> <!--This is the total cost that will be seen once the button is pressed-->
+  </div>
+
+</body>
+</html>
