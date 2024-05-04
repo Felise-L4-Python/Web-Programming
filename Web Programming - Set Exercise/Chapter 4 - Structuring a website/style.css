@@ -1,0 +1,136 @@
+body {  /*This is the css code for the body of the website*/
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-image: url("savana.jpg");
+    font-family: "Arsenal", sans-serif;
+  }
+  /* This is the css code for both header and nav to have the same style*/
+  header, nav {
+    background-color: #946846;
+    color: #262A10;
+    margin: 0;
+    padding: 0px;
+    text-align: center;
+  }
+
+  header { /*This is the css code for the header that is seperated from nav. */
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 4px;
+    font-size: 26px;
+    margin-bottom: -1.5cm;
+  }
+  
+  .container { /*This is the css code for all class to be affected.*/
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  nav ul li a:hover { /* This changes the color when the nav are being hovered. */
+    color: #BAAB68; 
+}
+
+  nav ul { /* This is for styling the navigation */
+    font-family: "Playfair", serif;
+    font-size: 17px;
+    font-weight: 600;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul li { /* This too for styling nav but the list */
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav ul li a { /* This too for styling nav text */
+    color: #0F0508;
+    text-decoration: none;
+  }
+  
+  main { /* This is to easily layout and align the items */
+    display:flex;
+  }
+  
+  h2 { /* This is the css code to style h2 */
+    font-family: "Playfair", serif;
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 30px;
+  }
+
+  .content-section { /* This is the css code for the content-secion */
+    flex: 1;
+    padding: 0 20px;
+  }
+  
+  #Savanna { /*This is the css code only for Savanna, just styling and arranging the content*/
+    color: #000000;
+    padding: 50px; 
+    text-align: justify; 
+    margin-right: 15%;
+    margin-left: 2cm;
+  }
+  
+  #Savanna p { /*This is the css code for adjusting the paragraph in Savanna content.*/
+    margin-right: -13rem;
+  }
+  
+  #wildlife { /* This is the css code only for wildlife, simiilar to savanna its for styling and arranging the content*/
+    background-color: #BAAB68; 
+    color:  #0F0508; 
+    padding: 40px; 
+    text-align: left;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 4%;
+    margin-right: 1cm;
+    float: right;
+    width: 15px;
+    height: 12cm;
+	  box-shadow: 2px 4px 3px 2px rgba(0, 0, 0, 0.5);
+  }
+  
+  .animals, .animals2 { /* This is the css code for the pictures in wildlife to be arrange properly in its place*/
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 30px;
+  }
+  
+  .animals img, .animals2 img { /* This is the css code for the pictures itself*/
+    height: 130px; 
+    width: 120px; 
+    object-fit: cover; 
+    border-radius: 10px;
+    margin-right: 10px;
+    padding: 6px;
+    transition: filter 0.3s;
+  }
+
+  .animals img:hover { /*CSS code to be able to hover at the images*/
+    cursor: pointer; /*Once the cursor hover to the images it will turn into a pointer*/
+    transform: scale(1.1);
+    z-index: 2;
+  }
+
+  .animals2 img:hover { /*CSS code to be able to hover at the images*/
+    cursor: pointer; /*Once the cursor hover to the images it will turn into a pointer*/
+    transform: scale(1.1);
+    z-index: 2;
+  }
+  
+  footer { /* This is the css code of the footer at the end of the website*/
+    background-color: #946846;
+    font-family: "Playfair", serif;
+    color:  #0F0508;
+    text-align: center;
+    padding: 20px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  
